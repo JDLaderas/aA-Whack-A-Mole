@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/mole.css" />
+		<script type="text/javascript" src="/js/mole.js"></script>
+		<title>Whack A Mole</title>
+	</head>
+	<body>
+		<!-- UNCOMMENT THE CODE BELOW WHEN DIRECTED -->
+		<div class="sb">
+			<div class="sb__score-holder">Score <span class="sb__score">0</span></div>
+			<div class="sb__game-over sb__game-over--hidden">Game Over</div>
+			<div class="sb__mole-counter">
+				Moles <span class="sb__moles">30</span>
+			</div>
+		</div>
+
+		<!-- Your code here -->
+		<div class="pf">
+			<div class="wgs">
+				<img
+					class="wgs-mole-head wgs-mole-head-hidden"
+					src="./img/mole-head.png"
+					alt="mole head"
+				/>
+				<img class="wgs-dirt-pile" src="./img/mole-hill.png" alt="mole hill" />
+			</div>
+
+			<div class="wgs">
+				<img
+					class="wgs-mole-head wgs-mole-head-hidden"
+					src="./img/mole-head.png"
+					alt="mole head"
+				/>
+				<img class="wgs-dirt-pile" src="./img/mole-hill.png" alt="mole hill" />
+			</div>
+
+			<div class="wgs">
+				<img
+					class="wgs-mole-head wgs-mole-head-hidden"
+					src="./img/mole-head.png"
+					alt="mole head"
+				/>
+				<img class="wgs-dirt-pile" src="./img/mole-hill.png" alt="mole hill" />
+			</div>
+
+			<div class="wgs">
+				<img
+					class="wgs-mole-head wgs-mole-head-hidden"
+					src="./img/mole-head.png"
+					alt="mole head"
+				/>
+				<img class="wgs-dirt-pile" src="./img/mole-hill.png" alt="mole hill" />
+			</div>
+
+			<div class="wgs">
+				<img
+					class="wgs-mole-head wgs-mole-head-hidden"
+					src="./img/mole-head.png"
+					alt="mole head"
+				/>
+				<img class="wgs-dirt-pile" src="./img/mole-hill.png" alt="mole hill" />
+			</div>
+
+			<div class="wgs">
+				<img
+					class="wgs-mole-head wgs-mole-head-hidden"
+					src="./img/mole-head.png"
+					alt="mole head"
+				/>
+				<img class="wgs-dirt-pile" src="./img/mole-hill.png" alt="mole hill" />
+			</div>
+
+			<div class="wgs">
+				<img
+					class="wgs-mole-head wgs-mole-head-hidden"
+					src="./img/mole-head.png"
+					alt="mole head"
+				/>
+				<img class="wgs-dirt-pile" src="./img/mole-hill.png" alt="mole hill" />
+			</div>
+
+			<div class="wgs">
+				<img
+					class="wgs-mole-head wgs-mole-head-hidden"
+					src="./img/mole-head.png"
+					alt="mole head"
+				/>
+				<img class="wgs-dirt-pile" src="./img/mole-hill.png" alt="mole hill" />
+			</div>
+		</div>
+
+		<script>
+			window.addEventListener("DOMContentLoaded", () => {
+				setInterval(() => {
+					const moleHeads = document.querySelectorAll(".wgs-mole-head");
+					for (let moleHead of moleHeads) {
+						moleHead.classList.toggle("wgs-mole-head-hidden");
+					}
+				}, 1000);
+			});
+		</script>
+	</body>
+</html>
